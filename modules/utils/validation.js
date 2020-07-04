@@ -208,21 +208,21 @@ export const validateValue = (config, leftField, field, operator, value, valueTy
       const fieldSettings = fieldWidgetDefinition; // widget definition merged with fieldSettings
 
       const fn = fieldWidgetDefinition.validateValue;
-      if (typeof fn == "function") {
-        const args = [
-          fixedValue, 
-          fieldSettings,
-        ];
-        if (valueSrc == "field")
-          args.push(rightFieldDefinition);
-        const validResult = fn(...args);
-        if (typeof validResult == "boolean") {
-          if (validResult == false)
-            validError = "Invalid value";
-        } else {
-          validError = validResult;
-        }
-      }
+    //   if (typeof fn == "function") {
+    //     const args = [
+    //       fixedValue, 
+    //       fieldSettings,
+    //     ];
+    //     if (valueSrc == "field")
+    //       args.push(rightFieldDefinition);
+    //     const validResult = fn(...args);
+    //     if (typeof validResult == "boolean") {
+    //       if (validResult == false)
+    //         validError = "Invalid value";
+    //     } else {
+    //       validError = validResult;
+    //     }
+    //   }
     }
   }
 

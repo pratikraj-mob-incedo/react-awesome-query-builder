@@ -242,9 +242,9 @@ const operators = {
     reversedOp: "not_between",
     jsonLogic: "<=",
     validateValues: (values) => {
-      if (values[0] != undefined && values[1] != undefined) {
-        return values[0] <= values[1] ? null : "Invalid range";
-      }
+    //   if (values[0] != undefined && values[1] != undefined) {
+    //     return values[0] <= values[1] ? null : "Invalid range";
+    //   }
       return null;
     },
   },
@@ -264,9 +264,9 @@ const operators = {
     ],
     reversedOp: "between",
     validateValues: (values) => {
-      if (values[0] != undefined && values[1] != undefined) {
-        return values[0] <= values[1] ? null : "Invalid range";
-      }
+    //   if (values[0] != undefined && values[1] != undefined) {
+    //     return values[0] <= values[1] ? null : "Invalid range";
+    //   }
       return null;
     },
   },
